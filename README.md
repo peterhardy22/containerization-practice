@@ -15,3 +15,7 @@ docker ps - Shows you which images are currently running (Container ID, Image, C
 
 docker run -d ‘docker-image’:’version’ - Starts an image in the background, or detached. (Does not block the terminal)
   - docker logs ‘container-id’ shows you info that docker run without -d shows you.
+
+docker stop 'container-id' - Stops the container from running.
+
+docker run -d -p 'localhost':'current-port' 'docker-image':'version' - -p (publish) alters the port that the container runs on.
