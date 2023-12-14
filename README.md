@@ -2,20 +2,37 @@
 
 This is a repo to hold all of my personal examples of containerization.
 
+## Documentation
+  1. [Docker](https://docs.docker.com/get-started/)
+  2. [Docker Hub Container Image Library](https://hub.docker.com/)
+
 ## CLI Shortcuts
 
-docker pull ‘docker-image’:’version’ - Pulls down a specific image and version for usage.
-  - Without specifying version it pulls the latest version automatically.
+docker images 
+  - Shows which Docker images exist (Repository, Tag, Image ID, Created, Size).
+  
+docker logs {container} 
+  - Shows you info that docker run without using the -d argument shows you.
 
-docker images - Shows which Docker images exist (Repository, Tag, Image ID, Created, Size)
+docker pull {name}:{tag} 
+  - Pulls down a specific Docker image (name) and version (tag) for usage.
+  - Without specifying the tag it pulls the latest version automatically.
 
-docker run ‘docker-image’:’version’ - Starts an image and therefore container. (Blocks the terminal)
+docker ps 
+  - Shows you which containers are currently running (Container ID, Image, Command, Created, Status, Ports, Names).
+  - Does not show you which containers have been created/started/stopped.
 
-docker ps - Shows you which images are currently running (Container ID, Image, Command, Created, Status, Ports, Names)
+docker ps -a
+  - Shows you all containers that have been stopped and are currently running.
 
-docker run -d ‘docker-image’:’version’ - Starts an image in the background, or detached. (Does not block the terminal)
-  - docker logs ‘container-id’ shows you info that docker run without -d shows you.
+docker run --name web-app -d -p {desired-port}:{current-port} {name}:{tag}
+  - run creates a new container everytime.
+  - --name allows you to give your container a name.
+  - -d starts a container in the background, or detached. (Does not block the terminal)
+  - -p (publish) alters the port that the container runs on.
 
-docker stop 'container-id' - Stops the container from running.
+docker start {container}
+  - Starts a container.
 
-docker run -d -p 'localhost':'current-port' 'docker-image':'version' - -p (publish) alters the port that the container runs on.
+docker stop {container} 
+  - Stops the container from running.
