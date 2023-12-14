@@ -1,6 +1,6 @@
 # Main Containers
 
-This is a repo to hold all of my personal examples of containerization.
+Going through and storing commands for using with Docker.
 
 ## Documentation
   1. [Docker](https://docs.docker.com/get-started/)
