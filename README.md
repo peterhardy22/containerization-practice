@@ -8,6 +8,11 @@ Going through and storing commands for using with Docker.
 
 ## CLI Shortcuts
 
+docker build -t {path}
+  - Builds a Docker image from a Dockerfile.
+  - -t (--tag) sets a name and optionally a tag in the "name:tag" format.
+  - Using '.' for path means current directory.
+
 docker images 
   - Shows which Docker images exist (Repository, Tag, Image ID, Created, Size).
   
