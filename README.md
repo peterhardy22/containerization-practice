@@ -5,6 +5,10 @@ Going through and storing commands for using with Docker.
   1. [Docker](https://docs.docker.com/get-started/)
   2. [Docker Hub Container Image Library](https://hub.docker.com/)
 
+## Table of Contents
+  - Demo-project
+  - Docker-example: Basic node image that starts a web application.
+
 
 ## CLI Shortcuts
 
