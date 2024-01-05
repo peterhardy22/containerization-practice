@@ -10,12 +10,18 @@ Going through and storing commands for using with Docker.
   - Docker-example: Basic Nodejs image that starts a web application.
 
 
-## CLI Shortcuts
+## CLI Commands
 
 docker build -t {path}
   - Builds a Docker image from a Dockerfile.
   - -t (--tag) sets a name and optionally a tag in the "name:tag" format.
   - Using '.' for path means current directory.
+
+docker-compose -f {file name} {up/down} -d
+  - Command for using Docker Compose yaml file.
+  - -f is for the Docker Compose yaml file name.
+  - up starts all the containers in the yaml file.
+  - down stops all the containers in the yaml file.
 
 docker exec -it {container id} /bin/bash
   - Opens a terminal for a specific container to naviagte inside.

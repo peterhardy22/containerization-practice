@@ -18,3 +18,8 @@ docker run -p 8081:8081 -d --network mongo-network --name mongodb-express \
     -e ME_CONFIG_MONGODB_ADMINPASSWORD=password \
     -e ME_CONFIG_MONGODB_SERVER=mongodb \
     mongo-express
+
+
+Docker Compose File:
+
+docker-compose
